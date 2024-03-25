@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class PlanoDeSaude {
     public static void main(String[] args) {
         String nome = JOptionPane.showInputDialog("Informe seu nome");
-        int idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade "+nome));
+        int idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade, "+nome));
         double valorPlano = 0;
         
         if(idade <= 10){
