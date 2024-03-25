@@ -25,6 +25,7 @@ public class NotasComMedia1 {
         media = (float)total/quant;
         
         JOptionPane.showMessageDialog(null, String.format("A media das notas eh: %.2f", media));
-    
+        
+        System.out.println("Olá, Mundo!");
     }
 }
