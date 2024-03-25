@@ -8,6 +8,7 @@ package Vetores;
  *
  * @author 20212PF.CC0012
  */
+//fazer media com vetor
 public class testeVetores {
     
     public static void main(String[] args) {
