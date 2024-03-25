@@ -13,23 +13,36 @@ public class exercicio1071 {
         
         Scanner entrada = new Scanner(System.in);
         
+        System.out.println("Informe um valor para X: ");
         int X = entrada.nextInt();
+        
+        System.out.println("Informe um valor para Y: ");
         int Y = entrada.nextInt();
+        
         int total = 0;
+        //int aux;
+        int maior = Math.max(X, Y);
+        int menor = Math.min(X, Y);
         
-        if(X > Y) {
-            int temp = X;
-            X = Y;
-            Y = temp;
-        }
-        
-        for (int i = X + 1; i < Y; i++) {
+        for(int i = menor + 1; i < maior; i++) {
             if(i % 2 != 0) {
-                total = total + i;
+                total = total + 1;
             }
         }
         
-        System.out.println(total);
+        /*if(X > Y) {
+            aux = X;
+            X = Y;
+            Y = aux;
+        }*/
+        
+        /*for (int i = X + 1; i < Y; i++) {
+            if(i % 2 != 0) {
+                total = total + i;
+            }
+        }*/
+        
+        System.out.println("O total eh: " + total);
         
         entrada.close();
         
