@@ -5,6 +5,7 @@
 package exerciciosAula;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class exercicio1094 {
@@ -36,7 +37,15 @@ public class exercicio1094 {
             totalCobaia = totalCobaia + n;
         }
         
-        System.out.println("Total " +totalCobaia); //+ " cobaias\n" + "Total Ratos: "+contRatos+ "\nTotal Sapos: "+contSapos+ "Total de Coelhos: " +contCoelho);
+        System.out.println("Total: "+totalCobaia+" cobaias\n" +
+"Total de coelhos: "+contCoelho+"\n" +
+"Total de ratos: "+contRatos+"\n" +
+"Total de sapos: "+contSapos);
+        float percCoelhos = (float) contCoelho / totalCobaia;
+        DecimalFormat formatoNum = new DecimalFormat("0.00");
+        System.out.println("Percentual de coelhos: "+formatoNum.format(percCoelhos * 100)+" %");
+        System.out.println("Percentual de ratos: "+formatoNum.format((float) contRatos / totalCobaia *100)+" %");
+        System.out.printf("Percentual de sapos: %.2f %%\n", ((float) contSapos / totalCobaia * 100));
     }
 
 }
